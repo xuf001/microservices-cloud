@@ -66,5 +66,6 @@
   <modules>
   	<module>microservice.business-api</module>
   	<module>microservice.business-provider-dept</module>
+  	<module>microservice.business-consumer-dept8091</module>
   </modules>
 </project>
