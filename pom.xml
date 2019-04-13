@@ -63,4 +63,7 @@
      </dependency>
    </dependencies>
   </dependencyManagement>
+  <modules>
+  	<module>microservice.business-api</module>
+  </modules>
 </project>
