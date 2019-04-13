@@ -65,5 +65,6 @@
   </dependencyManagement>
   <modules>
   	<module>microservice.business-api</module>
+  	<module>microservice.business-provider-dept</module>
   </modules>
 </project>
