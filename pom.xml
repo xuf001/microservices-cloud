@@ -93,5 +93,9 @@
   	<module>microservice.business-consumer-dept8091</module>
   	<module>microservice.business-eureka7001</module>
   	<module>microservice.business-eureka7002</module>
+  	<module>microservice.business-eureka7003</module>
+  	<module>microservice.business-consumer-dept-fegin</module>
+  	<module>microservice.business-provider-dept8091</module>
+  	<module>microservice.business-provider-dept8092</module>
   </modules>
 </project>
