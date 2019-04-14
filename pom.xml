@@ -63,9 +63,35 @@
      </dependency>
    </dependencies>
   </dependencyManagement>
+  
+  <!-- 以$起止的在directory路径下的配置信息能够读取 -->
+  <build>
+   <finalName>microscloudbusiness</finalName>
+   <resources>
+     <resource>
+       <directory>src/main/resources</directory><!-- 允许访问这个地址下文件 -->
+       <filtering>true</filtering>
+     </resource>
+   </resources>
+   <plugins>
+     <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-resources-plugin</artifactId>
+       <configuration>
+         <delimiters>
+          <delimit>$</delimit>
+         </delimiters>
+       </configuration>
+     </plugin>
+   </plugins>
+  </build>
+  
+  
   <modules>
   	<module>microservice.business-api</module>
   	<module>microservice.business-provider-dept</module>
   	<module>microservice.business-consumer-dept8091</module>
+  	<module>microservice.business-eureka7001</module>
+  	<module>microservice.business-eureka7002</module>
   </modules>
 </project>

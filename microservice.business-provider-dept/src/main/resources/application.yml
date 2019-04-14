@@ -10,7 +10,7 @@ mybatis:
   
 spring:
   application:
-    name: microservicecloud-business
+    name: microservicecloud-business-dept#micros register name
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
@@ -24,3 +24,18 @@ spring:
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
 
  
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+      #http://localhost:7001/eureka
+  instance:
+     instance-id: micros-business-dept-8090
+     prefer-ip-address: true
+     
+     
+info:
+  app.name: xfang-microservicecloud-business
+  company.name: www.xfang.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
