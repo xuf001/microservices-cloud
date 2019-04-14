@@ -13,7 +13,10 @@ import springcloud.entities.Dept;
 @RestController
 public class DeptController_Consumer {
 
-	private static final String REST_URL_PREFIX="http://localhost:8090";
+//	private static final String REST_URL_PREFIX="http://localhost:8090";
+	//标准的微服务访问地址，可以通过微服务的真是名字访问
+	private static final String REST_URL_PREFIX="http://MICROSERVICECLOUD-BUSINESS-DEPT";
+	
 	
 	//消费者调rest接口，提供平多种远程HTTP 服务访问，将rest调用又封装了一层
 	@Autowired
